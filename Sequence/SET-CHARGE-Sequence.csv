@@ -1,0 +1,14 @@
+Basic,Basic,Basic,Basic,InitInfoFun,InitInfoFun,InitInfoFun,InitInfoFun,UartPortFun,UartComFun,UartComFun,UartComFun,UartComFun,UartComFun,InitInfoFun,CutOutFun,InitInfoFun,JudgeFun,JudgeFun,JudgeFun,JudgeFun,SleepFun
+TestGroup,TestProcess,Step,Enable,FailStop,RetryTimes,DelayTime,Remark,Baud,UartDevice,Cmd,SendEndSympol,TimeOut,RecEndSympol,InPutKey,Script,OutKey,DataType,UpLimit,LowLimit,Units,Sleep
+DC,MfgMode,InitInfoFun,TRUE,TRUE,,,,,,,,,,,,,,,,,
+DC,MfgMode,CutOutFun,TRUE,,,,,,,,,,,*s_SN,main:enable_CDC,s,,,,,
+DC,MfgMode,SleepFun,TRUE,,,,,,,,,,,,,,,,,,200
+DC,MfgMode,CutOutFun,TRUE,,,,,,,,,,,*s_SN,main:enter_mfg_mode,s,,,,,
+DC,MfgMode,JudgeFun,TRUE,,,,,,,,,,,s,,,STRING,ok,ok,,
+DC,MfgMode,SleepFun,TRUE,,,,,,,,,,,,,,,,,,200
+DC,max charging value to 75%,InitInfoFun,TRUE,TRUE,,,,,,,,,,,,,,,,,
+DC,max charging value to 75%,CutOutFun,TRUE,,,,,,,,,,,*s_SN,main:set_delay_max_charging_75,s,,,,,
+DC,max charging value to 75%,JudgeFun,TRUE,,,,,,,,,,,s,,,STRING,ok,ok,,
+DC,max charging value to 75%,SleepFun,TRUE,,,,,,,,,,,,,,,,,,200
+TestEnd,TestEnd,InitInfoFun,TRUE,FALSE,,,,,,,,,,,,,,,,,
+TestEnd,TestEnd,PassToUart,TRUE,FALSE,,,,9600,CtrolBoard,PASS,,5,,,,,,,,,

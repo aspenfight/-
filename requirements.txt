@@ -1,0 +1,15 @@
+future==0.18.2
+iso8601==1.0.2
+numpy==1.23.3
+opencv-python==4.5.3.56
+pexpect==4.8.0
+psutil==5.9.2
+ptyprocess==0.7.0
+pylink-square==0.14.3
+PyMySQL==1.0.2
+PyVISA==1.12.0
+PyYAML==6.0
+serial==0.0.97
+pyserial==3.5
+six==1.16.0
+typing-extensions==4.3.0
